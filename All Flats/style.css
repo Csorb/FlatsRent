@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+    width:100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),#49b6d4),url("../pictures/flat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    overflow-x: hidden;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Menu part */
+  .navbar{
+    width:100%;
+    backdrop-filter: blur(1rem);
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    z-index:100;
+  }
+  .title h1{
+    font-size: 1rem;
+    position: relative;
+    top:2rem;
+    right:-5.5rem;
+  }
+/* Logo part */
+  .nav_logo{
+    margin-left:1rem;
+   }
+  .nav_logo img{
+    width: 10rem;
+  }
+ .nav_menu ul{
+    display: flex;
+ }
+ .nav_menu ul li{
+    list-style-type: none;
+ }
+ .nav_menu ul li a{
+    text-decoration: none;
+    font-weight:600;
+    font-size: 1.5rem;
+    color:rgb(5, 5, 5);
+    padding-bottom: 0.4rem;
+    margin:0 2rem;
+ }
+ .nav_menu ul li a:hover{
+    border-bottom:0.1rem solid rgb(0, 0, 0);
+ }
+ .nav_menu ul .btn{
+    width:8rem;
+    height:2rem;
+    font-weight: 600;
+    background: rgba(157, 225, 236, 0.817);
+    border-radius:2rem;
+    cursor:pointer;
+    border:none;
+    margin: 0 0.4rem;
+    font-size: 1rem;
+    color: rgb(19, 19, 19);
+ }
+ .nav_menu ul .btn:hover{
+    background: rgba(255, 255, 255, 0.7);
+ }
+ .nav_btn{
+    display: none;
+ }
+/* Table part */
+#flatsTable,#flatsTable tbody,#flatsTable th,#flatsTable td {
+  border-collapse: collapse;
+  text-align: center;
+  overflow: hidden;
+  max-width:65rem; 
+  margin: auto;
+}
+#flatsTable th, #flatsTable td {
+  border: 0.1rem solid #ddd;
+  padding: 1rem;
+}
+#flatsTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#flatsTable th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #4caf8b;
+  color: white;
+  text-align: center;
+}
+ /* Filter and sort parts */
+ .filter_and_sorting {
+  margin: 3rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.droppdown {
+  display: inline-block;
+  position: relative; 
+}
+
+.droppdown .sort {
+  background-color: rgb(48, 137, 164);
+  color: rgb(0, 0, 0);
+  padding: 0.7rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.droppdown .content {
+  display: none; 
+  position: absolute;
+  background-color:   rgb(48, 137, 164);
+  min-width: 15rem; 
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.8);
+  z-index: 1; 
+}
+
+.droppdown:hover .content {
+  display: block; 
+}
+
+.droppdown ul {
+  margin: 0;
+  padding: 0;
+}
+
+.droppdown ul li {
+  list-style-type: none;
+  padding: 0.7rem 1rem;
+}
+
+.droppdown ul li:hover {
+  background-color:rgb(107, 225, 231);
+}
+/* Heart button */
+.btx{
+    font-size: 1.5rem; 
+    transition: color 0.3s ease;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    color: red;
+}
+.bx-heart, .bxs-heart {
+    color: red; 
+}
+.btn-delete{
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color:black;
+}
+/* Responsive part*/
+/* Small desktop size */
+@media screen and (max-width: 1024px) {
+  .nav_menu ul li a{
+     font-size: 1.3rem;
+  }
+ }
+ /* Tablet size */
+ @media only screen and (max-width: 768px) {
+  .nav_btn i{
+    padding: 1.5rem;
+     font-size: 3rem;
+  }
+  .nav_btn{
+     display: block;
+     position: relative;
+     z-index: 1;
+  }
+  .nav_menu.responsive{
+     top: 5rem;
+     cursor: pointer;
+       width:100%;
+       height: 15rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+  }
+  .navbar{
+    flex-direction: row;
+    z-index:1;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    width:100%;
+    position: fixed;
+ }
+  .nav_menu{
+     position:fixed;
+     top:-15rem;
+     display: flex;
+     justify-content: center;
+     background: rgba(49, 200, 211, 0.8);
+     backdrop-filter: blur(1.2rem);
+  }
+  .nav_menu ul{
+     flex-direction: column;
+     text-align: center;
+     gap:1.3rem;
+  }
+  .title h1 {
+      font-size: 1.2rem;
+  }
+ 
+  .nav_menu ul li a {
+      font-size: 0.9rem;
+      margin: 0 1rem; 
+  }
+  #logoutBtn{
+     margin: 0 2rem;
+  }
+  #flatsTable,#flatsTable tbody,#flatsTable th,#flatsTable td {
+  max-width:20rem;
+ }
+ .droppdown {
+  position: relative; 
+    left:2.5rem;
+}
+ }
+ /* Mobile size */
+ @media only screen and (max-width: 480px) {
+   .nav_logo img {
+     width: 8rem;
+   }
+   .droppdown {
+    position: relative; 
+      left:14rem;
+  }
+  .title h1 {
+  right:-4.7rem;
+  font-size: 0.9rem;
+  }
+ }

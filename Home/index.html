@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlatsRent</title>
+    <link rel="stylesheet" href="../Home/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo_box">
+                <div class="title">
+                    <h1>FlatsRent</h1>
+                </div>
+                <div class="nav_logo">
+                    <img src="../pictures/key.jpg" alt="Rent">
+                </div>
+            </div>
+            <div class="nav_menu" id="navMenu">
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../All Flats/index.html">All Flats</a></li>
+                    <li><a href="../New Flat/index.html">New Flat</a></li>
+                    <li><div class="content">
+                    <a href="../Profile Update/index.html" id="welcomeMessage">Hello, </a>
+                    </div></li>
+                    <button class="btn" id="logoutBtn">Logout</button>
+                </ul>
+            </div>
+            <div class="nav_btn">
+                <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+            <table id="favoriteFlatsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Street Name</th>
+                        <th>Street Number</th>
+                        <th>Area Size</th>
+                        <th>Has AC</th>
+                        <th>Year Built</th>
+                        <th>Rent Price</th>
+                        <th>Date Available</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Favorite flats rows will be dynamically added here -->
+                </tbody>
+            </table>
+    </div>
+    <script src="../Home/script.js"></script>
+</body>
+</html>

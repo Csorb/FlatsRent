@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add flats - FlatsRent</title>
+    <link rel="stylesheet" href="../New Flat/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo_box">
+                <div class="title">
+                    <h1>FlatsRent</h1>
+                </div>
+                <div class="nav_logo">
+                    <img src="../pictures/key.jpg" alt="Rent">
+                </div>
+            </div>
+            <div class="nav_menu" id="navMenu">
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../All Flats/index.html">All Flats</a></li>
+                    <li><a href="../New Flat/index.html">New Flat</a></li>
+                    <li><div class="content">
+                    <a href="../Profile Update/index.html" id="welcomeMessage">Hello, </a>
+                    </div></li>
+                    <button class="btn" id="logoutBtn">Logout</button>
+                </ul>
+            </div>
+            <div class="nav_btn">
+                <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+            <div class="form_box update">
+                <form id="newFlatForm">
+                    <h1>Add new flats</h1>
+                    <div class="one_box">
+                        <div class="input_box">
+                            <input type="text" id="name" name="name" required>
+                            <label>Name</label>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" id="city" name="city" required>
+                            <label>City</label>
+                        </div>
+                        <div class="input_box">
+                        <input type="text" id="streetName" name="streetName" required>
+                        <label>Street Name</label>
+                        </div>
+                        <div class="input_box">
+                        <input type="number" id="streetNumber" name="streetNumber" required>
+                        <label>Street Number</label>
+                        </div>
+                        <div class="input_box">
+                            <input type="number" id="areaSize" name="areaSize" required>
+                            <label>Area Size</label>
+                         </div>
+                            <div class="check_box">
+                                <h3>Has AC</h3>
+                                <input type="checkbox" id="hasAC" name="hasAC">
+                            </div>
+                        <div class="input_box">
+                            <input type="number" id="yearBuilt" name="yearBuilt" required>
+                            <label>Year Built</label>
+                        </div>
+                        <div class="input_box">
+                            <input type="number" id="rentPrice" name="rentPrice" required>
+                            <label>Rent Price</label>
+                         </div>
+                        <div class="input_box">
+                            <h3>Date Available</h3>
+                            <input type="date" id="dateAvailable" name="dateAvailable" required>
+                         </div>
+                        <div class="input_box">
+                            <button type="submit" class="submit">Save</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <script src="../New Flat/script.js"></script>
+</body>
+</html>

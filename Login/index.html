@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlatsRent</title>
+    <link rel="stylesheet" href="../Login/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="title">
+                <h1>FlatsRent</h1>
+            </div>
+            <div class="nav_logo">
+                <img src="../pictures/key.jpg" alt="Rent">
+            </div>
+        </nav>
+            <div class="form_box">
+                <form id="loginForm">
+                    <h1>Sign in</h1>
+                    <div class="one_box">
+                    <div class="input_box">
+                        <i class="bx bx-envelope"></i>
+                        <input type="email" class="input_style" id="loginEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input_box">
+                        <i class="bx bx-lock-alt"></i>
+                        <input type="password" class="input_style" id="loginPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="two_box">
+                        <input type="checkbox" class="checkbox" id="rememberMe">
+                        <p>Remember me</p>
+                    </div>
+                    <div class="three_box">
+                        <div class="input_box">
+                            <button type="submit" class="submit" id="loginBtn">Login</button>
+                        </div>
+                        <div class="input_box">
+                            <button type="submit" class="submit" id="registerBtn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+     <script src="../Login/script.js"></script>
+</body>
+</html>
